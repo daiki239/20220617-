@@ -17,7 +17,6 @@ h2 {
 
 }
 
-
 .ul__menu {
   display: flex;
   font-weight: bold
@@ -35,7 +34,7 @@ h2 {
 }
 
 a {
-  
+  color: black;
   text-decoration: none;
 }
 
@@ -49,53 +48,6 @@ a {
 
 }
 
-.ttl__B {
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.company {
-  width: 100%;
-  border-bottom: 1px solid #222;
-}
-
-table {
-  margin-top: 30px;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin: 50px auto;
-  padding-top: 30px;
-
-}
-
-tbody {
-  display: table-row-group;
-}
-
-.infomation__A {
-  font-weight: bold;
-  width: 100px;
-  border-top: 1px solid #000;
-  margin-top: 30px;
-  border-bottom: 1px solid #000;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.infomation__A2 {
-  width: 200px;
-  border-top: 1px solid #000;
-  margin-top: 30px;
-  border-bottom: 1px solid #000;
-}
-
-tr {
-  display: table-row;
-}
-
-th {
-  display: table-cell;
-}
 
 .news {
   height: 150%;
@@ -130,21 +82,19 @@ th {
 
 
 
-.news__itema {
-  margin: 2em auto;
+.news__itema {margin: 2em auto;
   padding: 0.5em;
   width: 90%;
   background-color: #fff;
   border: 2px solid rgb(5, 5, 5);
   margin-top: 1px;
   width: 50%;
-  margin-left: 25%;
+margin-left: 25%;
   height: 50px;
   line-height: 50px;
 }
 
-.news__itemb {
-  margin: 2em auto;
+.news__itemb {margin: 2em auto;
   padding: 0.5em;
   width: 90%;
   background-color: #fff;
@@ -156,8 +106,7 @@ th {
   line-height: 50px;
 }
 
-.news__itemc {
-  margin: 2em auto;
+.news__itemc {margin: 2em auto;
   padding: 0.5em;
   width: 90%;
   background-color: #fff;
@@ -254,8 +203,8 @@ th {
 .last {
   display: flex;
   flex-direction: row;
-  background-color: #000;
-
+background-color: #000;
+ 
 }
 
 
@@ -319,46 +268,4 @@ th {
 
 .last__C {
   color: #eee;
-}
-
-.blog__main {
-  width: 85%;
-  padding: 80px 0;
-  margin: auto;
-}
-
-.blog__ttl {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  margin-top: 50px;
-}
-
-
-.blog__1 {}
-
-
-.blog_txtA {
-  margin-right: 20px;
-  font-size: 14px;
-
-}
-
-.blog__img1 {
-  width: 100%;
-}
-
-.blog__img {
-  width: 20%;
-
-}
-
-
-
-.reaasonA {
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 5%;
-  text-align: left;
 }

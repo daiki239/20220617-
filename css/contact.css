@@ -35,7 +35,7 @@ h2 {
 }
 
 a {
-  
+  color: black;
   text-decoration: none;
 }
 
@@ -258,27 +258,6 @@ th {
 
 }
 
-
-.bottan_service {
-  display: block;
-  width: 300px;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  background-color: #cd0224;
-  color: #fff;
-  margin: auto;
-  margin-top: 5%;
-}
-
-
-.last {
-  display: flex;
-  flex-direction: row;
-  background-color: #000;
-
-}
-
 .copylight {
   margin-top: 15%;
   margin-left: 5vh;
@@ -320,6 +299,21 @@ th {
 .last__C {
   color: #eee;
 }
+
+.bottan_service {
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #cd0224;
+  color: #fff;
+  margin: auto;
+  margin-top: 5%;
+}
+
+
+
 
 .blog__main {
   width: 85%;
