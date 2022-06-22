@@ -43,6 +43,13 @@ text-decoration: none;}
 
 }
 
+.IT{width: 50%;}
+.ttl__s{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+}
 .ttl__A{margin: 0 auto;
 width: 45%;
 }

@@ -314,45 +314,11 @@ th {
 
 
 
-
-.blog__main {
-  width: 85%;
-  padding: 80px 0;
-  margin: auto;
-}
-
-.blog__ttl {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  margin-top: 50px;
-}
-
-
-.blog__1 {}
-
-
-.blog_txtA {
-  margin-right: 20px;
-  font-size: 14px;
-
-}
-
-.blog__img1 {
+.detail.html{font-size: 16px;
   width: 100%;
-}
-
-.blog__img {
-  width: 20%;
-
-}
-
-
-
-.reaasonA {
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 5%;
-  text-align: left;
-}
+  padding: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  resize: none;}
