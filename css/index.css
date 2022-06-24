@@ -45,11 +45,11 @@ h2 {
   text-align: center;
 }
 
-.nav ul {
+.drawer__nav ul {
   padding-top: 80px;
 }
 
-.nav ul li {
+.drawer__nav ul li {
   list-style-type: none;
   margin-top: 50px;
 }
