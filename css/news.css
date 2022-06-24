@@ -20,7 +20,9 @@ h2 {
   z-index: 1;
 
 }
-
+.drawer__menu {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;

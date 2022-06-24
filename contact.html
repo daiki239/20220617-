@@ -54,7 +54,7 @@
       <li><a href="contact.html">お問い合わせ</a></li>
     </ul>
   </nav>
-  <div class="drawer__menu" id="drwer__menu">
+  <div class="drawer__menu" id="drawer__menu">
     <span class="menu__line--top"></span>
     <span class="menu__line--middle"></span>
     <span class="menu__line--bottom"></span>
@@ -66,30 +66,31 @@
   </div>
 </div>
 
-<div class="send">
-  <form class="detail.html" method="get">
-    <label>
-      会社名<br><input type="text" name="name">
-    </label>
-  </form>
-  <form class="detail.html" method="get">
-    <label>
-      お名前<br><input type="text" name="name">
-    </label>
-  </form>
-  <form class="detail.html" method="get">
-    <label>
-      メールアドレス<br><input type="text" name="name">
-    </label>
-  </form>
-  <form class="detail.html" method="get">
-    <label>
-      お問い合わせ内容<br><input type="text" name="name">
-    </label>
-  </form>
-</div>
-
-
+<main>
+  <div class="contact ptb-m wrap-s">
+    <form class="contact-form" action="index.html" method="post">
+      <div class="contact-form-item">
+        <label class="contact-form-item-name" for="company">会社名</label>
+        <input type="text" id="company" class="contact-form-item-input">
+      </div>
+      <div class="contact-form-item">
+        <label class="contact-form-item-name" for="name">お名前<span class="contact-form-item-required">*</span></label>
+        <input type="text" id="name" class="contact-form-item-input" required="">
+      </div>
+      <div class="contact-form-item">
+        <label class="contact-form-item-name" for="email">メールアドレス<span
+            class="contact-form-item-required">*</span></label>
+        <input type="email" id="email" class="contact-form-item-input" required="">
+      </div>
+      <div class="contact-form-item">
+        <label class="contact-form-item-name" for="comment">お問い合わせ内容<span
+            class="contact-form-item-required">*</span></label>
+        <textarea id="comment" rows="8" cols="80" class="contact-form-item-textarea" required=""></textarea>
+      </div>
+      <input type="submit" value="お申し込み" class="contact-form-submit">
+    </form>
+  </div>
+</main>
 
 
 <section class="last">

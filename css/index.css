@@ -54,6 +54,8 @@ h2 {
   margin-top: 50px;
 }
 
+.drawer__menu{display: none;}
+
 @media screen and (max-width: 768px) {
   .drawer__menu {
 
@@ -73,6 +75,7 @@ h2 {
   .menu__line--top,
   .menu__line--middle,
   .menu__line--bottom {
+    display: none;
     display: inline-block;
     width: 100%;
     height: 4px;
