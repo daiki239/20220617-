@@ -4,18 +4,11 @@ h2 {
   height: 70px;
   padding: 0 30px;
 }
-.ttl__B {
-  font-weight: bold;
-  font-size: 50px;
-}
 
-h2 {
-  font-style: italic;
-  font-size: 30px;
-  height: 70px;
-  padding: 0 30px;
-}
+.ttl__B{font-size: 30px;
 
+}
+/* ここからドロワーメニュー */
 .flex {
   display: flex;
   justify-content: space-between;
@@ -129,6 +122,8 @@ h2 {
   transform: translateX(100%);
 }
 
+/* ここまで */
+
 .home__img {
   width: 100%;
 
@@ -139,7 +134,7 @@ a {
   text-decoration: none;
 }
 
-.home {
+.home {width: 100%;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -321,12 +316,6 @@ margin-left: 25%;
   text-align: center;
 }
 
-.last {
-  display: flex;
-  flex-direction: row;
-background-color: #000;
- 
-}
 
 
 .bottan_service {
@@ -341,33 +330,60 @@ background-color: #000;
   margin-top: 5%;
 }
 
+/*ここからお問い合わせ*/
+
+.form {
+  padding: 80px;
+
+}
+
+.mein {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.naiyou {
+  margin-top: 3%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*ここまで*/
+
+/*ここからフッター*/
 
 .last {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  display: flex;
   flex-direction: row;
-  background-color: #000;
+
 
 }
 
-.copylight {
-  margin-top: 15%;
-  margin-left: 5vh;
-
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #222;
 }
 
 .last__A {
-  margin-left: 20vh;
-  margin-top: 20%;
-  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .last {
-  color: #fff;
+
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgb(6, 6, 6);
-  margin-top: 30px;
+
+
   position: sticky;
   left: 0;
   top: 0;
@@ -378,6 +394,7 @@ background-color: #000;
 .last__A {
 
   display: flex;
+  flex-wrap: wrap;
   font-weight: bold
 }
 
@@ -385,8 +402,40 @@ background-color: #000;
   margin-right: 30px;
   border-right: solid rgb(250, 249, 249);
   padding-right: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .last__B {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+
+  }
 }
 
 .last__C {
   color: #eee;
+}
+
+/*ここまで*/
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+}
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.ptb-m {
+  padding: 80px;
+}
+
+.wrap__A {
+  width: 75%;
+  margin: 0 auto;
 }

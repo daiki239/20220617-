@@ -279,29 +279,6 @@ th {
   text-align: center;
 }
 
-.last {
-  display: flex;
-  flex-direction: row;
-  background-color: #000;
-
-}
-
-.copylight {
-  margin-top: 15%;
-  margin-left: 5vh;
-
-}
-
-.last__A {
-  margin-left: 20vh;
-  margin-top: 20%;
-  margin-bottom: 5%;
-  list-style: none;
-}
-
-.last__B {
-  
-}
 
 .bottan_service {
   display: block;
@@ -317,35 +294,6 @@ th {
 
 
 
-
-.last {
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(6, 6, 6);
-  margin-top: 30px;
-  position: sticky;
-  left: 0;
-  top: 0;
-  z-index: 1;
-
-}
-
-.last__A {
- 
-  display: flex;
-  font-weight: bold
-}
-
-.last__B {
-  margin-right: 30px;
-  border-right: solid rgb(250, 249, 249);
-    padding-right: 10px;
-}
-
-.last__C {
-  color: #eee;
-}
 
 
 
@@ -404,3 +352,106 @@ table {
   border-spacing: 0;
 }
 
+/*ここからお問い合わせ*/
+
+.form {
+  padding: 80px;
+
+}
+
+.mein {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.naiyou {
+  margin-top: 3%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*ここまで*/
+
+/*ここからフッター*/
+
+.last {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #222;
+}
+
+.last__A {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.last {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+}
+
+.last__A {
+
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold
+}
+
+.last__B {
+  margin-right: 30px;
+  border-right: solid rgb(250, 249, 249);
+  padding-right: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .last__B {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+
+  }
+}
+
+.last__C {
+  color: #eee;
+}
+
+/*ここまで*/
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.ptb-m {
+  padding: 80px;
+}

@@ -223,44 +223,60 @@ a {
 .in {
   transform: translateX(100%);
 }
+/*ここからお問い合わせ*/
 
-.form__A {
+.form {
+  padding: 80px;
+
+}
+
+.mein {
   margin-top: 5%;
   text-align: center;
   font-size: 30px;
 }
 
-.form__B {
+.naiyou {
   margin-top: 3%;
   text-align: center;
+  padding-bottom: 30px;
 }
+
+/*ここまで*/
+
+/*ここからフッター*/
 
 .last {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  display: flex;
   flex-direction: row;
-  background-color: #000;
+
 
 }
 
-.copylight {
-  margin-top: 15%;
-  margin-left: 5vh;
-
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #222;
 }
 
 .last__A {
-  margin-left: 20vh;
-  margin-top: 20%;
-  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .last {
-  color: #fff;
+
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgb(6, 6, 6);
-  margin-top: 30px;
+
+
   position: sticky;
   left: 0;
   top: 0;
@@ -271,6 +287,7 @@ a {
 .last__A {
 
   display: flex;
+  flex-wrap: wrap;
   font-weight: bold
 }
 
@@ -278,11 +295,41 @@ a {
   margin-right: 30px;
   border-right: solid rgb(250, 249, 249);
   padding-right: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .last__B {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+
+  }
 }
 
 .last__C {
   color: #eee;
 }
+
+/*ここまで*/
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.ptb-m {
+  padding: 80px;
+}
+
+
+
+
 
 .bottan_service {
   display: block;
@@ -312,11 +359,15 @@ margin: auto;
   align-items: center;
 
   
-  margin-top: 50px;
+ 
 }
 
-.blog__A{width: 50%;
+.blog__A{
 }
+@media screen and (max-width: 768px) {.blog__A {
+  width: 100%;
+  margin-right: 0;
+}}
 
 .blog__1 {}
 
@@ -331,9 +382,8 @@ margin: auto;
  
 }
 
-.blog__img{width: 50%;
-
-}
+img{width: 100%;
+height: auto;}
   
 
 

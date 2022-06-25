@@ -124,6 +124,7 @@ a{color: black;
 text-decoration: none;}
 
 .home{height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,10 +132,24 @@ text-decoration: none;}
   color: #fff;
 
 }
+.service__ttl{margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 30px;
+  font-weight: bold;}
+
+.serviceclass{width: 100%;
+  height: auto;}
+
+@media screen and (max-width: 768px) {.IT{
+    width: 85%;
+    margin-right: 0;
+  } }
 
 
-.IT{width: 50%;}
-.ttl__s{
+  .IT{padding: 80px 0;}
+
+.ttl__s{width: 80%;
+  margin: auto;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
@@ -156,17 +171,25 @@ width: 45%;
 
 }
 
+@media screen and (max-width: 768px){ .TECH__ttltxt {
+  width: 85%;
+}}
+
+.TECH__ttltxt{margin: auto;}
+
 .TECH__ttl{
   color: #fff;
   background-color: black;
- 
+padding: 80px 0;
 }
 
 h3{font-size: 30px;
-margin-left: 20vh;
-}
+  font-weight: bold;
+  }
 
-.TECH__txt{font-size: 25px;
+
+
+.TECH__txt{font-size: 15px;
 margin-top: 20px;
 
 }
@@ -175,10 +198,10 @@ margin-top: 20px;
   margin: 0 auto;
 
 }
-h3{text-align: center;}}
+h3{text-align: center;}
 
 .ttl__s{display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -193,54 +216,60 @@ margin: auto;
  margin-top: 5%;
 }
 
+
+/*ここからニュース*/
 .news{
   background-color: black;
   height: 150%;
 }
 
 .head{display: flex;
-  flex-direction: row;
- margin-top: 10%;
+  justify-content: space-between;
+    align-items: center;
+ 
  line-height: 50px;
 }
-.news__A{color: #fff;}
+.news__A{color: #fff;
+font-size: 30px;
+  font-weight: bold;}
+
 .news__botn{display: block;
-  width: 300px;
+  width: 160px;
+  font-size: 14px;
   text-align: center;
   font-weight: bold;
   padding: 10px;
   background-color: #cd0224;
   color: #fff;
-  margin-left: 50%;
+
   }
 
 .news__l{
   color: rgb(9, 9, 9);
   text-align: center;
+  margin-top: 20px;
 }
 
 .news__itema{
   background-color: #fff;
-  margin-top: 1px;
-  width: 50%;
+  padding: 10px;
   margin: auto;
   height: 50px;
   line-height: 50px;
+  align-items: center;
 }
 .news__itemb {
   background-color: #fff;
-  margin-top: 1%;
-  width: 50%;
-  margin-left: 25%;
+align-items: center;
   line-height: 50px;
+  margin-top: 10px;
 }
 .news__itemc {
   background-color: #fff;
-    margin-top: 1%;
-    width: 50%;
-    margin-left: 25%;
+    align-items: center;
     line-height: 50px;
  margin-bottom: 1%;
+margin-top: 10px;
 }
 
 .gaiyo{margin-top: 10%;
@@ -264,35 +293,42 @@ margin: auto;
   background-color: black;
   color: #fff;
 }
+/*ここまで*/
 
+/*ここからブログ*/
+.blog__q{text-align: center;
+font-size: 30px;
+font-weight: bold;
+}
 .blog__ttl{display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   align-items: center;
-
-  width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
 }
-
-
-.blog__1{
-}
-
   
 .blog_txtA {
-  margin-right: 20px;
-  font-size: 14px;
+  margin-top: 5px;
+    margin-right: 20px;
+    font-size: 14px;
 
 }
 
-.blog__img1 {
+.blog__img{
   width: 100%;
+  height: auto;
 }
-.blog__img{width: 100%;}
 
 .reaasonA{font-weight: bold;
   font-size: 18px;
-  margin-top: 5%;
   text-align: left;
+  
+}
+/*ここまで*/
+
+/*ここからお問い合わせ*/
+
+.form{padding: 80px;
+
 }
 
 .mein{margin-top: 5%;
@@ -302,32 +338,42 @@ margin: auto;
 
 .naiyou{margin-top: 3%;
   text-align: center;
+  padding-bottom: 30px;
 }
-.last {
+
+/*ここまで*/
+
+/*ここからフッター*/
+
+.last {display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
   display: flex;
   flex-direction: row;
-  background-color: #000;
+  
 
 }
 
-.copylight {
-  margin-top: 15%;
-  margin-left: 5vh;
-
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #222;
 }
 
 .last__A {
-  margin-left: 20vh;
-  margin-top: 20%;
-  margin-bottom: 5%;
+  display: flex;
+    flex-wrap: wrap;
   list-style: none;
 }
 .last {
-  color: #fff;
+  
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgb(6, 6, 6);
-  margin-top: 30px;
+
+ 
   position: sticky;
   left: 0;
   top: 0;
@@ -338,15 +384,39 @@ margin: auto;
 .last__A {
 
   display: flex;
+  flex-wrap: wrap;
   font-weight: bold
+ 
 }
 
 .last__B {
   margin-right: 30px;
   border-right: solid rgb(250, 249, 249);
   padding-right: 10px;
+    
 }
+
+@media screen and (max-width: 768px) {.last__B {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+
+}}
 
 .last__C {
   color: #eee;
 }
+
+/*ここまで*/
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.ptb-m{padding: 80px;}
