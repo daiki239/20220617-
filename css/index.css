@@ -136,17 +136,21 @@ text-decoration: none;}
   margin-bottom: 5%;
   font-size: 30px;
   font-weight: bold;}
-
-.serviceclass{width: 100%;
+img{width: 100%;}
+.seviceclass{
   height: auto;}
 
 @media screen and (max-width: 768px) {.IT{
-    width: 85%;
+    width: 100%;
     margin-right: 0;
   } }
 
 
-  .IT{padding: 80px 0;}
+  .IT{padding: 80px 0;
+  width: 49%;
+  margin-top: 20px;
+  margin-right: 1%;
+}
 
 .ttl__s{width: 80%;
   margin: auto;
@@ -305,6 +309,12 @@ font-weight: bold;
   align-items: center;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {.blog__A {
+  width: 100%;
+  margin-right: 0;
+}}
+
+.blog__A{width: 30%;}
   
 .blog_txtA {
   margin-top: 5px;
