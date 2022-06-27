@@ -159,6 +159,8 @@ flex-wrap: wrap;
 align-items: center;
 
 }
+
+
 .ttl__A{margin: 0 auto;
 width: 45%;
 }
@@ -207,6 +209,14 @@ h3{text-align: center;}
 .ttl__s{display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+}
+
+@media screen and (max-width: 768px) {
+  .ttl__s {
+    display: block;
+    width: 150%;
+  }
 }
 
 .bottan_service{display: block;
@@ -309,9 +319,16 @@ font-weight: bold;
   align-items: center;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .blog__ttl {
+    width: 200%;
+   display: block;
+  }
+}
 @media screen and (max-width: 768px) {.blog__A {
   width: 100%;
   margin-right: 0;
+  
 }}
 
 .blog__A{width: 30%;}

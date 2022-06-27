@@ -280,55 +280,6 @@ th {
   text-align: center;
 }
 
-.last {
-  display: flex;
-  flex-direction: row;
-  background-color: #000;
-
-}
-
-.copylight {
-  margin-top: 15%;
-  margin-left: 5vh;
-
-}
-
-.last__A {
-  margin-left: 20vh;
-  margin-top: 20%;
-  margin-bottom: 5%;
-  list-style: none;
-}
-
-.last {
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(6, 6, 6);
-  margin-top: 30px;
-  position: sticky;
-  left: 0;
-  top: 0;
-  z-index: 1;
-
-}
-
-.last__A {
-
-  display: flex;
-  font-weight: bold
-}
-
-.last__B {
-  margin-right: 30px;
-  border-right: solid rgb(250, 249, 249);
-  padding-right: 10px;
-}
-
-.last__C {
-  color: #eee;
-}
-
 .bottan_service {
   display: block;
   width: 300px;
@@ -364,6 +315,16 @@ th {
 
 .contact-form-item2{margin-left: 20px;}
 
+.contact-form-item-input {
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 .contact-form-submit {
   width: 300px;
@@ -378,4 +339,87 @@ th {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+}
+
+/*ここからフッター*/
+
+.last {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #222;
+}
+
+.last__A {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.last {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+}
+
+.last__A {
+
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold
+}
+
+.last__B {
+  margin-right: 30px;
+  border-right: solid rgb(250, 249, 249);
+  padding-right: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .last__B {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+
+  }
+}
+
+.last__C {
+  color: #eee;
+}
+
+/*ここまで*/
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.ptb-m {
+  padding: 80px;
 }
