@@ -8,29 +8,11 @@ h2 {
   width: 100%;
 
 }
-
-a {
-  color: black;
-  text-decoration: none;
+/* ここからドロワーメニュー */
+.drawer__coler {
+  color: rgb(41, 49, 216);
 }
 
-.home {
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(../img-2/mv.png) center / cover;
-  color: #fff;
-
-}
-.ttl__B {
-  font-weight: bold;
-  font-size: 50px;
-}
-a{color: #000;
-  text-decoration: none;
-}
 .flex {
   display: flex;
   justify-content: space-between;
@@ -43,7 +25,9 @@ a{color: #000;
 
 }
 
-
+a {
+  color: ;
+}
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -73,8 +57,22 @@ a{color: #000;
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .drawer__nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: .7s;
+
+  }
+}
+
 .drawer__nav ul {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .drawer__nav ul li {
@@ -89,15 +87,15 @@ a{color: #000;
 
 @media screen and (max-width: 768px) {
   .drawer__menu {
-
     max-width: 768px;
     display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
     position: relative;
-    left: 20px;
-    top: 20px;
+    right: 20px;
+    z-index: 10;
+
   }
 }
 
@@ -145,6 +143,60 @@ a{color: #000;
 .in {
   transform: translateX(100%);
 }
+@media screen and (max-width: 768px) {
+  .drawer__menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drawer__menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drawer__menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+}
+/* ここまで */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.home {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img-2/mv.png) center / cover;
+  color: #fff;
+
+}
+.ttl__B {
+  font-weight: bold;
+  font-size: 50px;
+}
+a{color: #000;
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+}
+
 
 .form__A {
   margin-top: 5%;

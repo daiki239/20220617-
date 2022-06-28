@@ -8,7 +8,12 @@ h2 {
 .ttl__B{font-size: 30px;
 
 }
+
 /* ここからドロワーメニュー */
+.drawer__coler {
+  color: rgb(41, 49, 216);
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -20,6 +25,8 @@ h2 {
   z-index: 1;
 
 }
+
+
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -49,8 +56,22 @@ h2 {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .drawer__nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: .7s;
+
+  }
+}
+
 .drawer__nav ul {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .drawer__nav ul li {
@@ -65,15 +86,15 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .drawer__menu {
-
     max-width: 768px;
     display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
     position: relative;
-    left: 20px;
-    top: 20px;
+    right: 20px;
+    z-index: 10;
+
   }
 }
 
@@ -134,18 +155,8 @@ a {
   text-decoration: none;
 }
 
-.home {width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(../img-2/mv.png) center / cover;
-  color: #fff;
-
-}
-
 .home__img {
-  width: 50%;
+  width: 100%;
 
 }
 
@@ -155,7 +166,8 @@ a {
 }
 
 .home {
-  height: 50vh;
+  height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +175,6 @@ a {
   color: #fff;
 
 }
-
 
 .news {
   height: 150%;
