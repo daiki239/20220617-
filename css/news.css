@@ -1,12 +1,15 @@
 h2 {
-  font-style: italic;
+  
   font-size: 30px;
   height: 70px;
   padding: 0 30px;
-}
-
-.ttl__B{font-size: 30px;
-
+  display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 /* ここからドロワーメニュー */
@@ -26,14 +29,6 @@ h2 {
 
 }
 
-
-
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-
-  }
-}
 
 .ul__menu {
   display: flex;
@@ -56,20 +51,6 @@ h2 {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .drawer__nav {
-    display: block;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: -100%;
-    background: #fff;
-    transition: .7s;
-
-  }
-}
-
 .drawer__nav ul {
   padding-top: 20px;
 }
@@ -84,34 +65,6 @@ h2 {
 }
 
 
-@media screen and (max-width: 768px) {
-  .drawer__menu {
-    max-width: 768px;
-    display: inline-block;
-    width: 36px;
-    height: 32px;
-    cursor: pointer;
-    position: relative;
-    right: 20px;
-    z-index: 10;
-
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .menu__line--top,
-  .menu__line--middle,
-  .menu__line--bottom {
-
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    position: absolute;
-    transition: 0.5s;
-  }
-}
 
 .menu__line--top {
   top: 0;
@@ -143,17 +96,9 @@ h2 {
   transform: translateX(100%);
 }
 
+
+
 /* ここまで */
-
-.home__img {
-  width: 100%;
-
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
 
 .home__img {
   width: 100%;
@@ -175,6 +120,95 @@ a {
   color: #fff;
 
 }
+
+.service__ttl {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+.seviceclass {
+  height: auto;
+}
+
+
+
+
+.IT {
+  padding: 80px 0;
+  width: 49%;
+  margin-top: 20px;
+  margin-right: 1%;
+}
+
+
+.ttl__s {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+
+.ttl__A {
+  margin: 0 auto;
+  width: 45%;
+}
+
+.ttl__B {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+.ttl__C {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.TECH__ttltxt {
+  margin: auto;
+}
+
+.TECH__ttl {
+  color: #fff;
+  background-color: black;
+  padding: 80px 0;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+.TECH__txt {
+  font-size: 15px;
+  margin-top: 20px;
+
+}
+
+.TECH__ttltxt {
+  width: 85%;
+  margin: 0 auto;
+
+}
+
+h3 {
+  text-align: center;
+}
+
 
 .news {
   height: 150%;
@@ -209,19 +243,21 @@ a {
 
 
 
-.news__itema {margin: 2em auto;
+.news__itema {
+  margin: 2em auto;
   padding: 0.5em;
   width: 90%;
   background-color: #fff;
   border: 2px solid rgb(5, 5, 5);
   margin-top: 1px;
   width: 50%;
-margin-left: 25%;
+  margin-left: 25%;
   height: 50px;
   line-height: 50px;
 }
 
-.news__itemb {margin: 2em auto;
+.news__itemb {
+  margin: 2em auto;
   padding: 0.5em;
   width: 90%;
   background-color: #fff;
@@ -233,7 +269,8 @@ margin-left: 25%;
   line-height: 50px;
 }
 
-.news__itemc {margin: 2em auto;
+.news__itemc {
+  margin: 2em auto;
   padding: 0.5em;
   width: 90%;
   background-color: #fff;
@@ -246,89 +283,9 @@ margin-left: 25%;
   margin-bottom: 1%;
 }
 
-.nav {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  left: -100%;
-  background: #eee;
-  transition: .7s;
-  text-align: center;
-}
-
-.nav ul {
-  padding-top: 80px;
-}
-
-.nav ul li {
-  list-style-type: none;
-  margin-top: 50px;
-}
-
-.menu {
-  display: inline-block;
-  width: 36px;
-  height: 32px;
-  cursor: pointer;
-  position: relative;
-  left: 20px;
-  top: 20px;
-}
-
-.menu__line--top,
-.menu__line--middle,
-.menu__line--bottom {
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  background-color: #000;
-  position: absolute;
-  transition: 0.5s;
-}
-
-.menu__line--top {
-  top: 0;
-}
-
-.menu__line--middle {
-  top: 14px;
-}
-
-.menu__line--bottom {
-  bottom: 0;
-}
-
-.menu.open span:nth-of-type(1) {
-  top: 14px;
-  transform: rotate(45deg);
-}
-
-.menu.open span:nth-of-type(2) {
-  opacity: 0;
-}
-
-.menu.open span:nth-of-type(3) {
-  top: 14px;
-  transform: rotate(-45deg);
-}
-
-.in {
-  transform: translateX(100%);
-}
-
-.form__A {
-  margin-top: 5%;
-  text-align: center;
-  font-size: 30px;
-}
-
-.form__B {
-  margin-top: 3%;
-  text-align: center;
-}
 
 
-
+/*ここからお問い合わせ*/
 .bottan_service {
   display: block;
   width: 300px;
@@ -340,8 +297,6 @@ margin-left: 25%;
   margin: auto;
   margin-top: 5%;
 }
-
-/*ここからお問い合わせ*/
 
 .form {
   padding: 80px;
@@ -416,15 +371,6 @@ margin-left: 25%;
 
 }
 
-@media screen and (max-width: 768px) {
-  .last__B {
-    text-align: center;
-    margin-top: 10px;
-    width: 100%;
-
-  }
-}
-
 .last__C {
   color: #eee;
 }
@@ -438,7 +384,6 @@ margin-left: 25%;
 }
 
 .wrap {
-  width: 85%;
   margin: 0 auto;
 }
 
@@ -446,7 +391,105 @@ margin-left: 25%;
   padding: 80px;
 }
 
-.wrap__A {
-  width: 75%;
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drawer__nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: .7s;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drawer__menu {
+    max-width: 768px;
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+    z-index: 10;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .menu__line--top,
+  .menu__line--middle,
+  .menu__line--bottom {
+
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .TECH__ttltxt {
+    width: 85%;
+
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .drawer__menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drawer__menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drawer__menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog__ttl {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog__A {
+    width: 100%;
+    margin-right: 0;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .last__B {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+
+  }
 }
